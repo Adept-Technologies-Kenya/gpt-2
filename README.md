@@ -1,32 +1,15 @@
-**Status:** Archive (code is provided as-is, no updates expected)
+# Community Health Platform - GPT2 Integration
 
-# gpt-2
+## Overview
 
-Code and models from the paper ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf).
+The Community Health Platform leverages advanced natural language processing capabilities provided by the GPT-2 model to enhance healthcare training. This repository integrates GPT-2 into the platform, allowing for dynamic and context-aware conversations.
 
-You can read about GPT-2 and its staged release in our [original blog post](https://blog.openai.com/better-language-models/), [6 month follow-up post](https://openai.com/blog/gpt-2-6-month-follow-up/), and [final post](https://www.openai.com/blog/gpt-2-1-5b-release/).
+### Features
 
-We have also [released a dataset](https://github.com/openai/gpt-2-output-dataset) for researchers to study their behaviors.
-
-<sup>*</sup> *Note that our original parameter counts were wrong due to an error (in our previous blog posts and paper).  Thus you may have seen small referred to as 117M and medium referred to as 345M.*
-
-## Usage
-
-This repository is meant to be a starting point for researchers and engineers to experiment with GPT-2.
-
-For basic information, see our [model card](./model_card.md).
-
-### Some caveats
-
-- GPT-2 models' robustness and worst case behaviors are not well-understood.  As with any machine-learned model, carefully evaluate GPT-2 for your use case, especially if used without fine-tuning or in safety-critical applications where reliability is important.
-- The dataset our GPT-2 models were trained on contains many texts with [biases](https://twitter.com/TomerUllman/status/1101485289720242177) and factual inaccuracies, and thus GPT-2 models are likely to be biased and inaccurate as well.
-- To avoid having samples mistaken as human-written, we recommend clearly labeling samples as synthetic before wide dissemination.  Our models are often incoherent or inaccurate in subtle ways, which takes more than a quick read for a human to notice.
-
-### Work with us
-
-Please [let us know](mailto:languagequestions@openai.com) if you’re doing interesting research with or working on applications of GPT-2!  We’re especially interested in hearing from and potentially working with those who are studying
-- Potential malicious use cases and defenses against them (e.g. the detectability of synthetic text)
-- The extent of problematic content (e.g. bias) being baked into the models and effective mitigations
+- **Natural Language Understanding:** GPT-2 excels at understanding and generating human-like responses, contributing to more effective and engaging user interactions.
+- **Context-Aware Conversations:** The model's contextual awareness enhances the quality of conversations, crucial for nuanced healthcare training scenarios.
+- **Diverse Input Handling:** GPT-2 can handle a broad range of inputs, from specific medical terminologies to general language inquiries, aligning with the diverse needs of users.
+- **Fine-Tuning for Healthcare Domains:** The pre-trained GPT-2 model is fine-tuned to address specific healthcare domains, tailoring its responses to the nuances of Mental Health, Sexual Reproductive Health, Sexual & Gender-Based Violence, and Maternal, Newborn & Child Health.
 
 ## Development
 
@@ -35,23 +18,6 @@ See [DEVELOPERS.md](./DEVELOPERS.md)
 ## Contributors
 
 See [CONTRIBUTORS.md](./CONTRIBUTORS.md)
-
-## Citation
-
-Please use the following bibtex entry:
-```
-@article{radford2019language,
-  title={Language Models are Unsupervised Multitask Learners},
-  author={Radford, Alec and Wu, Jeff and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
-  year={2019}
-}
-```
-
-## Future work
-
-We may release code for evaluating the models on various benchmarks.
-
-We are still considering release of the larger models.
 
 ## License
 
